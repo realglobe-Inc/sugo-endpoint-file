@@ -1,6 +1,6 @@
 {
   "name": "sugo-endpoint-file",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Endpoint to handle files",
   "main": "lib",
   "scripts": {
