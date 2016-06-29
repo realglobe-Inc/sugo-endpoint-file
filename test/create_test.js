@@ -64,6 +64,23 @@ describe('create', () => {
     })
   }))
 
+  it('Check file exists', () => co(function * () {
+    {
+      let { statusCode } = yield request({
+        method: 'HEAD',
+        url: `${baseUrl}/foo/bar/my-json-01.json`
+      })
+      assert.equal(statusCode, 204)
+    }
+    {
+      let { statusCode } = yield request({
+        method: 'HEAD',
+        url: `${baseUrl}/foo/bar/__not_exists___`
+      })
+      assert.equal(statusCode, 404)
+    }
+  }))
+
   it('Get the file', () => co(function * () {
     let { body, statusCode } = yield request({
       method: 'GET',
