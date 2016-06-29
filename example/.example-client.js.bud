@@ -1,0 +1,17 @@
+/**
+ * Bud file for example client
+ */
+'use strict'
+
+module.exports = {
+  force: true,
+  mode: '444',
+  data: {
+    src: require.resolve('sugo-agent-file/example/example-usage')
+  },
+  tmpl: `{{{read src}}}`
+}
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

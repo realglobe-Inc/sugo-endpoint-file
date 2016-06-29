@@ -38,6 +38,7 @@
     "injectmock": "^2.0.0",
     "sg-server": "^1.2.3",
     "sugos-assets": "^1.1.5",
+    "sugo-agent-file": "*",
     "sugos-ci": "^1.4.4"
   },
   "engines": {
