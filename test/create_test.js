@@ -32,7 +32,7 @@ describe('create', () => {
   }))
 
   after(() => co(function * () {
-    yield sleep.sleep(10)
+    yield asleep(10)
     yield server.close()
   }))
 
