@@ -127,18 +127,35 @@ server.listen(3000)
 Then call the api from agent script.
 
 ```javascript
-/** This is example of client */
-
 'use strict'
 
-const sugoAgentFile = require('sg-agent-file')
+const sugoAgentFile = require('sugo-agent-file')
 const co = require('co')
 
 co(function * () {
-  let agent = sugoAgentFile('/api/my-docs')
-  yield agent.write('my-data-01.json', JSON.stringify({ foo: 'bar' }, null, 2))
-  let content = yield agent.read('my-data-01.json')
-  /* .. */
+  let agent = sugoAgentFile('http://my-sever.com/files')
+
+  // Check if server available
+  {
+    let ok = yield agent.knock() // Send HTTP HEAD request.
+    /* ... */
+  }
+
+  // Access dynamic files
+  {
+    // Write
+    yield agent.write('my-text-01.txt', 'This is the text.')
+    // Read
+    let content = yield agent.read('my-text-01.txt')
+    console.log(content)
+    /* ... */
+    // Check
+    let exists = yield agent.exists('my-text-01.text')
+    if (exists) {
+      // Delete
+      yield agent.delete('my-text-01.txt')
+    }
+  }
 }).catch((err) => console.error(err))
 
 ```
@@ -185,6 +202,8 @@ This software is released under the [MIT License](https://github.com/realglobe-I
 Links
 ------
 
-+ [sugos](https://github.com/realglobe-Inc/sugos)
++ [sugos][sugos_url]
+
+[sugos_url]: https://github.com/realglobe-Inc/sugos
 
 <!-- Links End -->

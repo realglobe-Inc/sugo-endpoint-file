@@ -8,21 +8,20 @@ const create = require('../lib/create.js')
 const co = require('co')
 const sgServer = require('sg-server')
 const apemanrequest = require('apemanrequest')
-const apemansleep = require('apemansleep')
-const apemanport = require('apemanport')
+const asleep = require('asleep')
+const aport = require('aport')
 const assert = require('assert')
 const fs = require('fs')
 
 describe('create', () => {
   let server, baseUrl
   let request = apemanrequest.create()
-  let sleep = apemansleep.create()
   let dirname = `${__dirname}/../tmp/testing-files`
 
   before(() => co(function * () {
     let endpoint = create(dirname, {})
     assert.ok(endpoint)
-    let port = yield apemanport.find()
+    let port = yield aport()
     server = sgServer({
       endpoints: {
         '/foo/bar/:filename': endpoint
