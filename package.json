@@ -23,23 +23,23 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sugo-endpoint-file#readme",
   "dependencies": {
-    "apemanfs": "^1.0.4",
     "apemanlock": "^1.0.2",
+    "asfs": "^1.0.4",
     "co": "^4.6.0",
     "debug": "^2.2.0"
   },
   "devDependencies": {
     "ape-doc": "^2.0.2",
     "ape-tmpl": "^5.0.6",
-    "apemanrequest": "^2.0.1",
     "aport": "^1.0.0",
+    "arequest": "^2.0.2",
     "asleep": "^1.0.3",
     "coz": "^6.0.3",
     "injectmock": "^2.0.0",
-    "sg-server": "^1.2.3",
+    "sg-server": "^1.2.7",
     "sugo-agent-file": "^1.0.0",
-    "sugos-assets": "^1.1.5",
-    "sugos-ci": "^1.4.4"
+    "sugos-assets": "^1.1.8",
+    "sugos-ci": "^1.6.4"
   },
   "engines": {
     "node": ">=6",

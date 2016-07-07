@@ -7,7 +7,7 @@
 const create = require('../lib/create.js')
 const co = require('co')
 const sgServer = require('sg-server')
-const apemanrequest = require('apemanrequest')
+const arequest = require('arequest')
 const asleep = require('asleep')
 const aport = require('aport')
 const assert = require('assert')
@@ -15,7 +15,7 @@ const fs = require('fs')
 
 describe('create', () => {
   let server, baseUrl
-  let request = apemanrequest.create()
+  let request = arequest.create()
   let dirname = `${__dirname}/../tmp/testing-files`
 
   before(() => co(function * () {
