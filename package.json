@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sugo-endpoint-file#readme",
   "dependencies": {
-    "apemanlock": "^1.0.2",
     "asfs": "^1.0.4",
+    "aslock": "^1.0.1",
     "co": "^4.6.0",
     "debug": "^2.2.0"
   },
