@@ -1,6 +1,6 @@
 {
   "name": "sugo-endpoint-file",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Endpoint to handle files",
   "main": "lib",
   "scripts": {
@@ -32,14 +32,14 @@
     "ape-doc": "^2.0.2",
     "ape-tmpl": "^5.0.6",
     "aport": "^1.0.0",
-    "arequest": "^2.0.2",
+    "arequest": "^2.0.4",
     "asleep": "^1.0.3",
     "coz": "^6.0.3",
     "injectmock": "^2.0.0",
     "sg-server": "^1.2.7",
-    "sugo-agent-file": "^1.0.0",
-    "sugos-assets": "^1.1.8",
-    "sugos-ci": "^1.6.4"
+    "sugo-agent-file": "^1.0.6",
+    "sugo-ci-endpoint": "^1.0.0",
+    "sugos-assets": "^1.1.9"
   },
   "engines": {
     "node": ">=6",
