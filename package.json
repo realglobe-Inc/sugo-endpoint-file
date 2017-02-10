@@ -1,6 +1,6 @@
 {
   "name": "sugo-endpoint-file",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Endpoint to handle files",
   "main": "lib",
   "scripts": {
@@ -39,7 +39,7 @@
     "sg-server": "^1.2.7",
     "sugo-agent-file": "^1.0.6",
     "sugo-ci-endpoint": "^*",
-    "sugos-assets": "*"
+    "sugos-assets": "^2.0.6"
   },
   "engines": {
     "node": ">=6",
