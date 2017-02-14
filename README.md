@@ -206,8 +206,10 @@ This software is released under the [Apache-2.0 License](https://github.com/real
 Links
 ------
 
-+ [sugos][sugos_url]
++ [SUGOS][sugos_url]
++ [Realglobe,Inc.][realglobe,_inc__url]
 
 [sugos_url]: https://github.com/realglobe-Inc/sugos
+[realglobe,_inc__url]: http://realglobe.jp
 
 <!-- Links End -->
